@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import icon from '../img/icon.jpg'
 import App from '../App.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faFilePdf, faHamburger } from '@fortawesome/free-solid-svg-icons'
 import '../css/bulma.css'
 import {
     BrowserRouter as Router,
@@ -18,21 +18,42 @@ import Blog from "./Blog";
 
 class Header extends Component {
 
+    runToSetup() {
+        let burger = document.querySelector('.burger');
+        let nav = document.querySelector('#' + burger.dataset.target);
+
+        burger.addEventListener('click', function(){
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+        });
+
+    };
+
+    componentDidMount() {
+        this.runToSetup()
+    }
+
     render() {
         return (
             <Router>
               <div className="hero-head">
-                  <nav className="navbar">
+
+                  <nav className="navbar" role="navigation" aria-label="main navigation">
                       <div className="container">
-                          <div className="navbar-brand">
+
+                          <div id="navbar-brand" className="navbar-brand" role="navigation">
                               <img src={icon} alt="Logo" width="12%"
                                    style={{paddingBottom: `5px`, paddingTop: `5px`, minWidth: `50px`}}/>
-                              <span className="navbar-burger burger" data-target="navbarMenuHeroB"/>
+                              <span className="navbar-burger burger" data-target="navbarMenu" style={{textAlign: `center`}}>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </span>
                           </div>
 
-                          <div id="navbarMenuHeroB" className="navbar-menu">
-                              <div className="navbar-end">
-                                  <Link to="/" className="navbar-item is-active"> Home </Link>
+                          <div id="navbarMenu" className="navbar-menu" >
+                              <div id="navbar-end" className="navbar-end" >
+                                  <Link to="/" className="navbar-item"> Home </Link>
                                   <Link to="/blog" className="navbar-item"> Blog </Link>
 
                                   <span className="navbar-item">
