@@ -7464,7 +7464,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .hero.is-fullheight-with-navbar {
-  min-height: calc(100vh - 3.25rem);
+  min-height: calc(100vh - 5rem);
 }
 
 .pagination {

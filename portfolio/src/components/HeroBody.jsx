@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGooglePlay, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 class HeroBody extends Component {
 
@@ -15,20 +17,20 @@ class HeroBody extends Component {
                     <div className="social">
                         <span style={{fontSize: `1.75rem`, padding: `1%`}}>
                           <a href="https://play.google.com/store/apps/dev?id=8458169143809274686">
-                              <i className="fab fa-google-play"/>
+                              <FontAwesomeIcon icon={faGooglePlay} />
                           </a>
                         </span>
 
                         <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                          <a href="https://github.com/brookmg"><i className="fab fa-github"/></a>
+                          <a href="https://github.com/brookmg"><FontAwesomeIcon icon={faGithub} /></a>
                         </span>
 
                         <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                          <a href="https://twitter.com/brookmezgebu"><i className="fab fa-twitter"/></a>
+                          <a href="https://twitter.com/brookmezgebu"><FontAwesomeIcon icon={faTwitter} /></a>
                         </span>
 
                         <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                          <a href="https://www.linkedin.com/in/brook-mezgebu-b052a6121/"><i className="fab fa-linkedin"/></a>
+                          <a href="https://www.linkedin.com/in/brook-mezgebu-b052a6121/"><FontAwesomeIcon icon={faLinkedin} /></a>
                         </span>
                     </div>
                 </div>
