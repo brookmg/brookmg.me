@@ -6,6 +6,7 @@ import Header from './components/Header.jsx'
 import HeroBody from './components/HeroBody.jsx'
 import './App.css';
 import About from "./components/About";
+import Projects from "./components/Projects.jsx"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
 
         <About/>
 
+        <Projects/>
     </div>
   );
 }
