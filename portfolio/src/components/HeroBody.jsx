@@ -1,0 +1,41 @@
+import React, {Component} from 'react'
+
+class HeroBody extends Component {
+
+    render() {
+        return (
+            <div className="hero-body is-bold">
+                <div className="container introduction has-text-left">
+                    <h1 className="has-text-black is-size-3">Hello, </h1>
+                    <h1 className="has-text-white is-size-1">
+                        <span style={{backgroundColor: `#0bA292`, align: `center`, padding: `8px`}}> Brook </span>
+                    </h1>
+                    <h1 className="has-text-black is-size-3">Here</h1>
+
+                    <div className="social">
+                        <span style={{fontSize: `1.75rem`, padding: `1%`}}>
+                          <a href="https://play.google.com/store/apps/dev?id=8458169143809274686">
+                              <i className="fab fa-google-play"/>
+                          </a>
+                        </span>
+
+                        <span style={{fontSize: `1.75rem`, padding: `1%`}}>
+                          <a href="https://github.com/brookmg"><i className="fab fa-github"/></a>
+                        </span>
+
+                        <span style={{fontSize: `1.75rem`, padding: `1%`}}>
+                          <a href="https://twitter.com/brookmezgebu"><i className="fab fa-twitter"/></a>
+                        </span>
+
+                        <span style={{fontSize: `1.75rem`, padding: `1%`}}>
+                          <a href="https://www.linkedin.com/in/brook-mezgebu-b052a6121/"><i className="fab fa-linkedin"/></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+}
+
+export default HeroBody;
