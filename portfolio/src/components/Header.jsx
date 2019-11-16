@@ -32,14 +32,15 @@ class Header extends Component {
                           <div id="navbarMenuHeroB" className="navbar-menu">
                               <div className="navbar-end">
                                   <Link to="/" className="navbar-item is-active"> Home </Link>
-                                  <Link to="/blog" className="navbar-item is-active"> Blog </Link>
+                                  <Link to="/blog" className="navbar-item"> Blog </Link>
 
                                   <span className="navbar-item">
                                     <a className="button is-warning" style={{backgroundColor: `#0bA292`, color: `white`}}>
-                                      <span className="icon">
-                                        <FontAwesomeIcon icon={faFilePdf} />
-                                      </span>
-                                      <span>Download Resume</span>
+                                        <Link to="./file.pdf" target="_blank"
+                                              download style={{backgroundColor: `#0bA292`, color: `white`}}>
+                                          <span className="icon"><FontAwesomeIcon icon={faFilePdf} /></span>
+                                          <span> Download Resume </span>
+                                        </Link>
                                     </a>
                                   </span>
                               </div>
@@ -55,6 +56,8 @@ class Header extends Component {
                 <Route exact path="/blog">
 
                 </Route>
+
+
                 <Route path="*">
                     <Error404 />
                 </Route>
