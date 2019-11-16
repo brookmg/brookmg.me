@@ -12,6 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `Preview`
 
 <p align="center">
+    <br />
     <img src="./Preview.png" width="100%" />
 </p>
 
@@ -20,6 +21,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Create a new branch `git checkout -b '$username_$feature'`
 * Make small changes
 * Open a pull request 😊
+
+### `Inspiration`
+ This portfolio page is highly inspired by the works of Pavel Rekun. His design is what mostly drove me to make this web app.
+ `If You are reading this, Thanks.`
 
 ### `License`
 ```
