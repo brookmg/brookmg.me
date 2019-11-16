@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 import Home from './Home.jsx'
 import Error404 from "./Error404";
+import Blog from "./Blog";
 
 class Header extends Component {
 
@@ -54,7 +55,7 @@ class Header extends Component {
                     <Home />
                 </Route>
                 <Route exact path="/blog">
-
+                    <Blog />
                 </Route>
 
 
