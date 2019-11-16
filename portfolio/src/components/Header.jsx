@@ -15,6 +15,7 @@ import {
 import Home from './Home.jsx'
 import Error404 from "./Error404";
 import Blog from "./Blog";
+import Post from "./Post";
 
 class Header extends Component {
 
@@ -78,8 +79,7 @@ class Header extends Component {
                 <Route exact path="/blog">
                     <Blog />
                 </Route>
-
-
+                <Route exact path="/post/:postId" component={Post} />
                 <Route path="*">
                     <Error404 />
                 </Route>
