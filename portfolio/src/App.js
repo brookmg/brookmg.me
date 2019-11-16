@@ -5,6 +5,7 @@ import './css/fontawesome-all.css'
 import Header from './components/Header.jsx'
 import HeroBody from './components/HeroBody.jsx'
 import './App.css';
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Header/>
           <HeroBody/>
         </section>
+
+        <About/>
 
     </div>
   );
