@@ -11,7 +11,7 @@ class BlogItem extends Component {
             postSize: probs.postSize,
             postWords: probs.postWords,
             postPreview: probs.postPreview,
-            postId: 100
+            postId: probs.postId
         };
     }
 
