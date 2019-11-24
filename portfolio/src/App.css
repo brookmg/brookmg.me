@@ -7,7 +7,8 @@
 .introduction h1{font-family:Consolas,sans-serif;font-weight:500;padding-bottom:10px;padding-top:10px}
 .introduction h1 span{background-color:#0bA292;padding:10px}
 .introduction h2{font-family:Consolas,sans-serif;font-weight:300;padding-top:5px;padding-bottom:5px}
-.introduction .social{margin-top:10px}.introduction .social a{color:grey}
+.introduction .social{margin-top:10px}
+.introduction .social a{color:grey}
 .introduction .social .fa-google-play:hover{color:#0bA292}
 .introduction .social .fa-product-hunt:hover{color:#0bA292}
 .introduction .social .fa-github:hover{color:#0bA292}
@@ -52,3 +53,7 @@
 .container.post figcaption h4{display:flex;font-family:Consolas,sans-serif;font-weight:300;margin-top:10px;margin-bottom:10px;align-items:center;align-self:center;justify-content:center;align-content:center}
 .container.post ul{list-style:disc;margin-left:20px;margin-right:20px}
 .container.post li{font-family:Consolas,sans-serif;font-weight:400;text-align:justify;margin-top:15px;margin-bottom:15px}
+.polygon { margin-right: 4%; margin-left: 4%;}
+@media screen and (max-width: 500px) {
+    .polygon { display: none }
+}
