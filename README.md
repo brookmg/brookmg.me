@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <p align="center">
     <br />
-    <img src="./Preview.png" width="100%" />
+    <img src="./portfolio/Preview.png" width="100%" />
 </p>
 
 ### `Contribution`
