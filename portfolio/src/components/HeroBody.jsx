@@ -9,8 +9,8 @@ class HeroBody extends Component {
         return (
             <div className="hero-body is-bold">
 
-                <div className="container introduction">
-                    <div className="has-text-left is-pulled-left">
+                <div className="container introduction level">
+                    <div className="has-text-left is-pulled-left" style={{ width: '50%'}}>
                         <h1 className="has-text-black is-size-3">Hello, </h1>
                         <h1 className="has-text-white is-size-1">
                             <span style={{backgroundColor: `#0bA292`, align: `center`, padding: `8px`}}> Brook </span>
