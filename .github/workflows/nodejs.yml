@@ -17,9 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd portfolio
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
+    - run: cd portfolio && npm install
+    - run: cd portfolio && npm run build --if-present
+    - run: cd portfolio && npm test
       env:
         CI: true
