@@ -40,51 +40,6 @@ class HeroBody extends Component {
                         </div>
 
                     </div>
-
-                    <Particles
-                        className="is-pulled-right polygon"
-                        height={250}
-                        width={250}
-                        params={{
-                            "fps-limit": 30,
-                            "particles": {
-                                "numbers": {
-                                    "value": 100,
-                                    "density": {
-                                        "enable": false
-                                    }
-                                },
-                                direction: 'right',
-                                "line_linked": {
-                                    "enable": true,
-                                    "distance": 70,
-                                    "color": "#0bA292"
-                                },
-                                "move": {
-                                    "speed": 1.5
-                                }
-                            },
-                            "polygon": {
-                                "enable": true,
-                                "scale": 0.5,
-                                "type": "inline",
-                                "move": {
-                                    "radius": 30
-                                },
-                                "draw": {
-                                    "enable": true,
-                                    "stroke": {
-                                        "color": "#0bA292"
-                                    }
-                                },
-                                "inline": {
-                                    "arrangement": "equidistant"
-                                },
-                                "url": './godness_svg.svg'
-                            },
-                            "retina_detect": false
-                        }}
-                    />
                 </div>
 
             </div>
