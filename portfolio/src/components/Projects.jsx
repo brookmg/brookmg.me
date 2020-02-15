@@ -19,20 +19,21 @@ class Projects extends Component {
                                 projectName="Kuwas"
                                 projectDescription="A sport app designed for Ethiopian premier league. Currently available in the google playstore."
                                 projectImage={Kuwas}
+                                projectStatus="Active"
                                 projectLink="https://play.google.com/store/apps/details?id=app.kuwas.android"
                                 projectPlacement="Google Play"
                             />
 
                             <ProjectItem
                                 projectName="Azemari"
+                                projectStatus="Coming Soon"
                                 projectDescription="A music streaming app that aggregates content from varies well known music publishers in Ethiopia. Not available on Google play but working other distribution methods"
                                 projectImage={Azemari}
-                                projectLink="https://play.google.com/store/apps/details?id=app.kuwas.android"
-                                projectPlacement="Google Play"
                             />
 
                             <ProjectItem
                                 projectName="Hulu Radio"
+                                projectStatus="Active"
                                 projectDescription="A radio app designed for Ethiopian people. Contains mostly stations from local broadcasters"
                                 projectImage={Hulu}
                                 projectLink="https://play.google.com/store/apps/details?id=app.huluradio.android"
@@ -42,9 +43,10 @@ class Projects extends Component {
 
                             <ProjectItem
                                 projectName="Flick"
+                                projectStatus="Paused"
                                 projectDescription="Lead dev on an app designed for providing cinema schedule for foreign movies in around Addis Abeba, Ethiopia."
                                 projectImage={Flick}
-                                projectLink="https://play.google.com/store/apps/details?id=com.mnettechnologies.flick"
+                                projectLink="https://play.google.com/store/apps/details?id=com.mnettechnology.flick"
                                 projectPlacement="Google Play"
                             />
 
