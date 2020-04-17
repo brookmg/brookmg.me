@@ -16,6 +16,7 @@ import Home from './Home.jsx'
 import Error404 from "./Error404";
 import Blog from "./Blog";
 import Post from "./Post";
+import CovidAndroid from "./CovidAndroid";
 
 class Header extends Component {
 
@@ -56,6 +57,7 @@ class Header extends Component {
                               <div id="navbar-end" className="navbar-end" >
                                   <Link to="/" className="navbar-item"> Home </Link>
                                   <Link to="/blog" className="navbar-item"> Blog </Link>
+                                  <Link to="/covidandroid" className="navbar-item"> CovidAndroid </Link>
 
                                   <span className="navbar-item">
                                     <a className="button is-warning" style={{backgroundColor: `#0bA292`, color: `white`}}>
@@ -78,6 +80,9 @@ class Header extends Component {
                 </Route>
                 <Route exact path="/blog">
                     <Blog />
+                </Route>
+                <Route exact path="/covidandroid">
+                    <CovidAndroid />
                 </Route>
                 <Route exact path="/post/:postId" component={Post} />
                 <Route path="*">
