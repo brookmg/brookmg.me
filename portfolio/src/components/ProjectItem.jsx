@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDotCircle} from "@fortawesome/free-solid-svg-icons/faDotCircle";
 
+import Img from 'react-cool-img';
+
 class ProjectItem extends Component {
 
     constructor(probs) {
@@ -45,7 +47,16 @@ class ProjectItem extends Component {
 
                 </div>
 
-                <img className="screenshot" src={ this.state.projectImage} alt={`Preview for ${ this.state.projectName }`} width="200" height="500"/>
+                <Img
+                    className="screenshot"
+                    width={200}
+                    height={500}
+                    src={ this.state.projectImage }
+                    alt={`Preview for ${this.state.projectName}`}
+                    debounce={ 1000 }
+                    lazy
+                    />
+
                 <h3 className="has-text-black"><br/> { this.state.projectDescription } <br/><br/>
                     <a href={this.state.projectLink}> { this.state.projectPlacement } </a>
                 </h3>
