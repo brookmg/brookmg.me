@@ -1,9 +1,4 @@
 import React, {Component} from 'react'
-import ProjectItem from './ProjectItem.jsx'
-import Kuwas from '../img/Kuwas.png'
-import Azemari from '../img/Azemari.png'
-import Hulu from '../img/Hulu.png'
-import Flick from '../img/Flick.png'
 import FeatureItem from "./FeatureItem";
 
 class CovidFeatures extends Component {

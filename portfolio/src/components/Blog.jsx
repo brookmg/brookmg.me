@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import BlogItem from "./BlogItem";
 
 class Blog extends Component {
 
