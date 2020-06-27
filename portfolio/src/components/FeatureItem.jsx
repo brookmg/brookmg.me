@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faDotCircle} from "@fortawesome/free-solid-svg-icons/faDotCircle";
 
 class FeatureItem extends Component {
 

@@ -1,17 +1,13 @@
 import React, {Component} from 'react'
 import icon from '../img/icon.jpg'
-import App from '../App.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFilePdf, faHamburger } from '@fortawesome/free-solid-svg-icons'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import '../css/bulma.css'
 import {
     BrowserRouter as Router,
     Route,
     Link,
-    Switch,
-    Redirect,
-    useLocation
-} from "react-router-dom";
+    Switch} from "react-router-dom";
 import Home from './Home.jsx'
 import Error404 from "./Error404";
 import Blog from "./Blog";
@@ -60,13 +56,13 @@ class Header extends Component {
                                   <Link to="/covidandroid" className="navbar-item"> CovidAndroid </Link>
 
                                   <span className="navbar-item">
-                                    <a className="button is-warning" style={{backgroundColor: `#0bA292`, color: `white`}}>
+                                    <button className="button is-warning" style={{backgroundColor: `#0bA292`, color: `white`}}>
                                         <Link to="./file.pdf" target="_blank"
                                               download style={{backgroundColor: `#0bA292`, color: `white`}}>
                                           <span className="icon"><FontAwesomeIcon icon={faFilePdf} /></span>
                                           <span> Download Resume </span>
                                         </Link>
-                                    </a>
+                                    </button>
                                   </span>
                               </div>
                           </div>
