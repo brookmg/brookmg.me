@@ -19,21 +19,21 @@ class HeroBody extends Component {
                         <div className="social">
 
                             <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                              <a href="https://play.google.com/store/apps/dev?id=8458169143809274686">
+                              <a href="https://play.google.com/store/apps/dev?id=8458169143809274686" target="blank">
                                   <FontAwesomeIcon icon={faGooglePlay} />
                               </a>
                             </span>
 
                             <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                              <a href="https://github.com/brookmg"><FontAwesomeIcon icon={faGithub} /></a>
+                              <a href="https://github.com/brookmg" target="blank"><FontAwesomeIcon icon={faGithub} /></a>
                             </span>
 
                             <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                              <a href="https://twitter.com/brookmezgebu"><FontAwesomeIcon icon={faTwitter} /></a>
+                              <a href="https://twitter.com/brook_mezgebu" target="blank"><FontAwesomeIcon icon={faTwitter} /></a>
                             </span>
 
                             <span style={{fontSize: `1.75rem`, padding: `1%`}}>
-                              <a href="https://www.linkedin.com/in/brook-mezgebu-b052a6121/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                              <a href="https://www.linkedin.com/in/brook-mezgebu/" target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
                             </span>
 
                         </div>
