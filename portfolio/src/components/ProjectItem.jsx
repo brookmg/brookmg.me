@@ -33,7 +33,7 @@ class ProjectItem extends Component {
                 <h2> { this.state.projectName } </h2>
 
                 <div className="card">
-                    <header className="card-header">
+                    <header className="card-header" style={{ marginTop: '10px' }}>
                         <p className="card-header-title">
                             {`${ this.state.projectStatus }`}
                         </p>
