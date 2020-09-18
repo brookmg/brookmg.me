@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import ProjectItem from './ProjectItem.jsx'
 import Kuwas from '../img/Kuwas.png'
+import Fetena from '../img/Fetena.png'
 import Azemari from '../img/Azemari.png'
 import Hulu from '../img/Hulu.png'
 import Flick from '../img/Flick.png'
@@ -49,6 +50,18 @@ class Projects extends Component {
                                 projectLink="https://play.google.com/store/apps/details?id=com.mnettechnology.flick"
                                 projectPlacement="Google Play"
                             />
+
+                        </div>
+                        <div className="columns">
+
+                            <ProjectItem
+                                    projectName="Fetena"
+                                    projectDescription="Fetena（ፈተና） is a study app for students taking Ethiopian National Examination grades 8, 10 and 12. Fetena creates a study plan and regularly tests students with exams from previous year."
+                                    projectImage={Fetena}
+                                    projectStatus="Active"
+                                    projectLink="https://play.google.com/store/apps/details?id=io.fetena.fetena"
+                                    projectPlacement="Google Play"
+                                />
 
                         </div>
                     </div>

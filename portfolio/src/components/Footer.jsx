@@ -14,7 +14,7 @@ class Footer extends Component {
                             Powered by <a href="https://bulma.io/">Bulma</a> and <a href="https://reactjs.org/">React JS</a>
                         </h1>
                         <h1 className="has-text-black">
-                            Hosted on <a href="https://github.com/">GitHub</a>
+                            Hosted on <a href="https://netlify.com/">Netlify</a>
                         </h1>
                     </div>
                 </footer>

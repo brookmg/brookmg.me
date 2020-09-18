@@ -7,16 +7,54 @@ import {
     BrowserRouter as Router,
     Route,
     Link,
-    Switch} from "react-router-dom";
+    Switch,
+    useHistory,
+} from "react-router-dom";
 import Home from './Home.jsx'
 import Error404 from "./Error404";
 import Blog from "./Blog";
 import Post from "./Post";
 import CovidAndroid from "./CovidAndroid";
-import createHistory from 'history/createBrowserHistory'
 import ReactGA from 'react-ga'
 
+const SwitchHolder = () => {
+    const history = useHistory();
+  
+    React.useEffect(() => {
+      trackPageView(); // To track the first pageview upon load
+      history.listen(trackPageView); // To track the subsequent pageviews
+    }, [history]);
+  
+    function trackPageView() {
+      ReactGA.set({ page: window.location.pathname + window.location.search }); // Update the user's current page
+      ReactGA.pageview(window.location.pathname + window.location.search); // Record a pageview for the given page
+    }
+
+    return (
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route exact path="/blog">
+                <Blog />
+            </Route>
+            <Route exact path="/covidandroid">
+                <CovidAndroid />
+            </Route>
+            <Route exact path="/post/:postId" component={Post} />
+            <Route path="*">
+                <Error404 />
+            </Route>
+        </Switch>
+    )
+  };
+
 class Header extends Component {
+
+    trackPageView() {
+      ReactGA.set({ page: window.location.pathname + window.location.search }); // Update the user's current page
+      ReactGA.pageview(window.location.pathname + window.location.search); // Record a pageview for the given page
+    }
 
     runToSetup() {
         let burger = document.querySelector('.burger');
@@ -26,13 +64,6 @@ class Header extends Component {
             burger.classList.toggle('is-active');
             nav.classList.toggle('is-active');
         });
-
-        const history = createHistory()
-        history.listen(location => {
-            ReactGA.set({ page: location.pathname })
-            ReactGA.pageview(location.pathname)
-        })
-        
     };
 
     componentDidMount() {
@@ -84,21 +115,7 @@ class Header extends Component {
                   </nav>
               </div>
 
-            <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
-                <Route exact path="/blog">
-                    <Blog />
-                </Route>
-                <Route exact path="/covidandroid">
-                    <CovidAndroid />
-                </Route>
-                <Route exact path="/post/:postId" component={Post} />
-                <Route path="*">
-                    <Error404 />
-                </Route>
-            </Switch>
+            <SwitchHolder />
             </Router>
         );
     }
