@@ -4,6 +4,7 @@ import HeroBody from './HeroBody.jsx'
 import '../App.css';
 import About from "./About";
 import Projects from "./Projects.jsx"
+import BrioBody from './BrioBody';
 
 class Home extends Component {
 
@@ -14,6 +15,7 @@ class Home extends Component {
                     <HeroBody/>
                 </section>
                 <About/>
+                <BrioBody />
                 <Projects/>
             </div>
         );
