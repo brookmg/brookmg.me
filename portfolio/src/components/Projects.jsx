@@ -5,6 +5,7 @@ import Fetena from '../img/Fetena.png'
 import Azemari from '../img/Azemari.png'
 import Hulu from '../img/Hulu.png'
 import Flick from '../img/Flick.png'
+import Brio from '../img/BrioProject.png'
 
 class Projects extends Component {
 
@@ -60,6 +61,15 @@ class Projects extends Component {
                                     projectImage={Fetena}
                                     projectStatus="Active"
                                     projectLink="https://play.google.com/store/apps/details?id=io.fetena.fetena"
+                                    projectPlacement="Google Play"
+                                />
+
+                            <ProjectItem
+                                    projectName="Brio"
+                                    projectDescription="Brio is a USSD automating app that makes it easy to send and track your money. You can manage your CBE Birr account without going through the process of waiting for USSD calls. Mobile banking has never been more easy."
+                                    projectImage={Brio}
+                                    projectStatus="Active"
+                                    projectLink="https://play.google.com/store/apps/details?id=com.burnous.brio"
                                     projectPlacement="Google Play"
                                 />
 
