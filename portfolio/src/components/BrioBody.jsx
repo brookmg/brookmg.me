@@ -33,10 +33,8 @@ class BrioBody extends Component {
                     <div className="has-text-right" style={{ width: '30%', padding: "0" }}>
                         <Img
                             className="screenshot"
-                            
                             src={ Brio }
                             alt={`Preview for Brio`}
-                            debounce={ 1000 }
                             lazy
                             />
                 </div>

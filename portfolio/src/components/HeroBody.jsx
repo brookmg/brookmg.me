@@ -43,7 +43,6 @@ class HeroBody extends Component {
                             style={{ flex: 'auto' }}
                             src={ VCIllustration }
                             alt={`Illustration of moi?`}
-                            debounce={ 1000 }
                             lazy
                         />
 
