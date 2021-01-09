@@ -45,7 +45,7 @@ class Projects extends Component {
 
                             <ProjectItem
                                 projectName="Flick"
-                                projectStatus="Paused"
+                                projectStatus="Coming Soon"
                                 projectDescription="Lead dev on an app designed for providing cinema schedule for foreign movies in around Addis Abeba, Ethiopia."
                                 projectImage={Flick}
                                 projectLink="https://play.google.com/store/apps/details?id=com.mnettechnology.flick"

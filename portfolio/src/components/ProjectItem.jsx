@@ -53,7 +53,6 @@ class ProjectItem extends Component {
                     height={500}
                     src={ this.state.projectImage }
                     alt={`Preview for ${this.state.projectName}`}
-                    debounce={ 1000 }
                     lazy
                     />
 
